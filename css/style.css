@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  font-family: 'Roboto', 'sans-serif';
+}
+body {
+  background-color: #131f3d;
+  overflow-x: hidden;
+  color: #eff3f8;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 40px;
+}
+a {
+  color: #0791e6;
+}
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
+.Menu {
+  padding-right: 10px;
+}
+.Search-course {
+  width: 200px;
+  margin-right: 10px;
+ }
+.CategoriesSection .Category {
+  display: flex;
+  padding: 6px;
+}
+.CategoriesSection .Category a {
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
+}
+.Arrow {
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left-color: #fff;
+}
+.Hero-container {
+  padding: 0;
+}
+.Hero-description {
+  font-size: 18px;
+  font-weight: 400;
+
+  line-height: 28px;
+}
+.Hero-slide {
+  height: 200px;
+}
+.Certifier img {
+  height: 29px;
+}
+img {
+  border-style: none;
+}
+
+.Certifier-link {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-decoration: none;
+  color: #fff;
+}
+.button-row {
+  display: table-cell;
+}
+.simple-shape {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.one {
+  background-color: #ffaabb;
+  -webkit-animation: simple-square-to-circle 2s 0s linear infinite alternate;
+  animation: simple-square-to-circle 2s 0s linear infinite alternate;
+}
+
+.two {
+  background-color: #aabbff;
+  -webkit-animation: simple-rotate 2s 2s linear infinite alternate;
+  animation: simple-rotate 2s 2s linear infinite alternate;
+}
+
+.three {
+  background-color: #00ddcc;
+  -webkit-animation: simple-scale 1s 1s linear infinite alternate;
+  animation: simple-scale 1s 1s linear infinite alternate;
+}
+
+.four {
+  background-color: #c7e1ba;
+  -webkit-animation: simple-move 2s 2s linear infinite alternate;
+  animation: simple-move 2s 2s linear infinite alternate;
+}
+
+.SectionHeading {
+  margin: 40px 0;
+}
+.SectionHeading-line {
+  height: 2px;
+  width: 77px;
+  background-color: #33b1ff;
+  margin: 0 auto;
+}
+.SectionHeading-text {
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.card {
+  margin-bottom: 20px;
+  height: 300px;
+  border: none;
+}
+.CourseLayout {
+  color: rgb(0, 0, 0);
+}
+.Course-image {
+  margin: 0;
+}
+.Course-price {
+  font-weight: 600;
+}
+.Course-info {
+  display: flex;
+  height: 100%;
+  flex-direction:  column;
+}
+.Course-teacher {
+  font-size: 13px;
+}
+.Course-checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.Course-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.Footer {
+  padding: 2em 0;
+  background-color: #03091E;
+}
+.Footer {
+  line-height: 18px;
+}
+.Footer-up-social-title {
+  padding-top: 2em;
+  font-weight: bolder;
+}
+.Footer-up-social-icon {
+  padding: 30px;
+  color: white;
+}
+
+/***************** ANIMACIONES *****************/
+
+@-webkit-keyframes simple-square-to-circle {
+  100% {
+    -webkit-border-radius: 50%;
+  }
+}
+
+@keyframes simple-square-to-circle {
+  100% {
+    border-radius: 50%;
+  }
+}
+
+@-webkit-keyframes simple-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes simple-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes simple-scale {
+  100% {
+    -webkit-transform: scale(1.5);
+  }
+}
+
+@keyframes simple-scale {
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@-webkit-keyframes simple-move {
+  100% {
+    -webkit-transform: translate(50px, 0);
+  }
+}
+
+@keyframes simple-move {
+  100% {
+    transform: translate(50px, 0);
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .Hero-container {
+    padding: 0 200px;
+  }
+  .Hero-slide {
+    height: 398px;
+  }
+  .courses {
+    margin: 0 100px;
+  }
+  .Search-course {
+    width: 460px!important;
+  }
+ 
+}
